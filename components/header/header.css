@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.header__nav__hamburguer {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  height: 667px;
+  background-color: #161616;
+}
+
+.header__nav__hamburguer-button {
+  width: 37px;
+  height: 37px;
+  background-color: #e5e7e9;
+}
+
+.header__nav__hamburguer-link {
+  margin: 58px;
+  font-size: 48px;
+  font-family: "Montserrat";
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.header__nav__hamburger-icon-hamburguer {
+  width: 42px;
+  height: 42px;
+  margin: 20px 20px 0 0;
+}
+
+.header__nav-icon {
+  width: 100px;
+  height: 100px;
+  text-align: left;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav-full-screen {
+  margin-top: 58px;
+  margin-right: 80px;
+}
+
+.header__nav__link {
+  margin: 10px;
+  color: white;
+  font-size: 24px;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+
+@media (max-width: 899px) {
+  .header__nav-full-screen {
+    display: none;
+  }
+}
+
+@media (min-width: 899px) {
+  .header__nav__hamburger-icon {
+    display: none;
+  }
+}

@@ -1,0 +1,54 @@
+.serviceces__container-cards {
+  padding: 20px;
+  display: grid;
+  gap: 40px;
+}
+
+@media (min-width: 899px) {
+  .serviceces__container-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.servicees__container-title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  border: solid 2px #fc6f50;
+  border-radius: 4px;
+}
+
+.card-image {
+  width: 100%;
+  height: 173px;
+  object-fit: cover;
+}
+
+.container__content-card-title {
+  margin: 15px;
+  text-align: center;
+  font-size: "Poppins";
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+}
+
+.container__content-card-p {
+  font-size: "Poppins";
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+.container__content-card-link {
+  font-size: 24px;
+  color: #fc6f50;
+  display: block;
+  text-align: right;
+  margin-right: 10px;
+}
