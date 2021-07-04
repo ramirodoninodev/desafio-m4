@@ -28,7 +28,8 @@ function contactComponent(el){
     `;
     el.appendChild(componentElFooter);
 
-    const miFormEl = document.querySelector('.contact__component-form')
+
+    const miFormEl = document.querySelector('.contact__component-form');
     miFormEl.addEventListener('submit', (e) => {
         e.preventDefault()
         const formData = new FormData(miFormEl)
@@ -48,5 +49,8 @@ function contactComponent(el){
         }).then(res => res.json())
             .catch(error => console.error('Error:', error))
             .then(response => console.log('Success:', response));
+        setTimeout(function(){
+               location.reload() 
+        }, 3000)
     })
 }
